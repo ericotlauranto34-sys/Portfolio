@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=21">
+  <link rel="stylesheet" href="css/style.css?v=23">
 </head>
 <body>
 
@@ -54,15 +54,16 @@
     <div class="reveal reveal-up">
       <p class="eyebrow">[ INDEX DE RÉALISATIONS ]</p>
       <h1 class="page-title">Projets</h1>
-      <p class="eyebrow" style="margin-top:1rem;font-weight:normal;" id="workCount">Affichage de 5 sur 5 projets</p>
+      <p class="eyebrow" style="margin-top:1rem;font-weight:normal;" id="workCount">Affichage de 7 sur 7 éléments</p>
     </div>
 
     <div class="work-filter reveal reveal-left" id="filterBar">
-      <button class="active" data-filter="Tous">Tous (5)</button>
+      <button class="active" data-filter="Tous">Tous (7)</button>
       <button data-filter="Identity">Identity (2)</button>
       <button data-filter="Branding">Branding (4)</button>
       <button data-filter="Packaging">Packaging (3)</button>
-      <button data-filter="Print">Print (1)</button>
+      <button data-filter="Print">Print (2)</button>
+      <button data-filter="Social">Social (1)</button>
     </div>
 
     <div class="work-grid">
@@ -126,9 +127,37 @@
         </div>
       </a>
     </div>
-  </div>
 
-  <footer class="site-footer">
+    <!-- Section indépendante : Visuels Réseaux Sociaux & Imprimés -->
+    <div class="media-section">
+      <div class="media-head reveal reveal-up">
+        <p class="eyebrow">[ VISUELS RÉSEAUX SOCIAUX &amp; IMPRIMÉS ]</p>
+        <h2 class="media-title">Supports de Communication</h2>
+      </div>
+
+      <div class="media-grid">
+        <!-- Réseaux sociaux -->
+        <a class="media-card reveal reveal-left" href="social.html" data-categories="Social">
+          <div class="media-card-media">
+            <img src="assets/social-visuals.jpg" alt="Visuels pour réseaux sociaux">
+            <span class="media-tag">SOCIAL</span>
+          </div>
+          <h3 class="media-card-title">Réseaux Sociaux</h3>
+          <p class="media-card-desc">Publications, stories et formats adaptés pour Instagram, LinkedIn et autres plateformes.</p>
+        </a>
+
+        <!-- Imprimés -->
+        <a class="media-card reveal reveal-right" href="print.html" data-categories="Print">
+          <div class="media-card-media">
+            <img src="assets/print-visuals.jpg" alt="Supports imprimés">
+            <span class="media-tag">PRINT</span>
+          </div>
+          <h3 class="media-card-title">Imprimés</h3>
+          <p class="media-card-desc">Cartes de visite, affiches, brochures et papeterie d'exception prêts pour l'impression.</p>
+        </a>
+      </div>
+    </div>
+  </div>
     <div class="container">
       <div class="footer-cta">
         <p class="eyebrow" style="color:#8A857C;margin-bottom:1rem;">[ Contact &amp; Collaboration ]</p>
