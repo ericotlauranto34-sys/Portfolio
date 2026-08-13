@@ -268,9 +268,9 @@ button { font-family: inherit; cursor: pointer; }
   left: 50%;
   transform: translateX(-50%);
   bottom: 3.5rem; /* bas du logo aligné sur le haut de la barre scroll (même hauteur) */
-  width: auto;
-  height: calc(100vh - 3.5rem);
-  height: calc(100svh - 3.5rem);
+  width: 100vw;
+  min-width: 100vw;
+  height: auto;
   max-width: none;
   max-height: none;
 }
@@ -346,9 +346,6 @@ button { font-family: inherit; cursor: pointer; }
 /* Polaroid photo / contour animation */
 .polaroid-wrap { display: flex; justify-content: center; }
 @media (min-width: 1024px) { .polaroid-wrap { justify-content: flex-end; } }
-.contour-svg { width: 100%; max-width: 360px; height: auto; }
-@media (min-width: 640px) { .contour-svg { max-width: 480px; } }
-@media (min-width: 768px) { .contour-svg { max-width: 520px; } }
 .polaroid {
   position: relative;
   background: #fff;
