@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="100%" height="100%" fill="#ECE9E2"/>
+  <rect x="2" y="2" width="796" height="996" fill="none" stroke="#161513" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="400" cy="400" r="140" fill="#8A857C" fill-opacity="0.2"/>
+  <path d="M 200 800 Q 400 580 600 800" fill="none" stroke="#8A857C" stroke-opacity="0.4" stroke-width="8"/>
+  <g transform="translate(400, 900)" text-anchor="middle" font-family="monospace">
+    <text font-size="18" font-weight="bold" fill="#161513">[À compléter : Portrait Vasilías]</text>
+  </g>
+</svg>
