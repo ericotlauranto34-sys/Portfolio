@@ -77,6 +77,52 @@ document.addEventListener('DOMContentLoaded', function () {
     lineEls.forEach(function (el) { el.classList.add('in-view'); });
   }
 
+  /* ---------- Word cycle animation (slogan) : lettre par lettre, toutes les 4s ---------- */
+  var cycleWord = document.getElementById('cycleWord');
+  if (cycleWord) {
+    var words = ['Précision.', 'Sens.', 'Impact.', 'Émotion.'];
+    var wi = 0;
+
+    function eraseLetterByLetter(cb) {
+      var text = cycleWord.textContent;
+      var L = text.length;
+      var i = L;
+      var iv = setInterval(function () {
+        i--;
+        cycleWord.textContent = text.slice(0, i);
+        if (i <= 0) {
+          clearInterval(iv);
+          cb();
+        }
+      }, 40); // efface ~1 lettre / 40ms
+    }
+
+    function typeLetterByLetter(word, cb) {
+      var i = 0;
+      var iv = setInterval(function () {
+        i++;
+        cycleWord.textContent = word.slice(0, i);
+        if (i >= word.length) {
+          clearInterval(iv);
+          cb();
+        }
+      }, 60); // écrit ~1 lettre / 60ms
+    }
+
+    function next() {
+      wi = (wi + 1) % words.length;
+      var target = words[wi];
+      eraseLetterByLetter(function () {
+        typeLetterByLetter(target, function () {
+          setTimeout(next, 4000); // pause 4s avant le mot suivant
+        });
+      });
+    }
+
+    // Démarre le cycle après 4s
+    setTimeout(next, 4000);
+  }
+
   /* ---------- Copy email ---------- */
   function bindCopy(btnId, textId) {
     var btn = document.getElementById(btnId);

@@ -340,8 +340,11 @@ button { font-family: inherit; cursor: pointer; }
   margin: 0;
 }
 @media (min-width: 1024px) { .hero-title { font-size: clamp(3rem, 8vw, 7rem); } }
-.hero-sub { font-size: 1.25rem; line-height: 1.6; color: rgba(22,21,19,0.85); max-width: 40rem; margin: 0 auto; }
-@media (min-width: 640px) { .hero-sub { font-size: 1.5rem; } }
+.hero-sub { font-size: 1.75rem; line-height: 1.4; color: rgba(22,21,19,0.85); max-width: 34rem; margin: 0 auto; text-transform: uppercase; letter-spacing: 0.02em; font-weight: 700; }
+@media (min-width: 640px) { .hero-sub { font-size: 2.25rem; } }
+#cycleWord { color: var(--accent); font-weight: 700; }
+.hero-sub-note { font-size: 1rem; line-height: 1.6; color: rgba(22,21,19,0.75); max-width: 28rem; margin: 1.25rem auto 0; font-weight: 400; text-transform: none; letter-spacing: 0; }
+@media (min-width: 640px) { .hero-sub-note { font-size: 1.125rem; } }
 
 /* Polaroid photo / contour animation */
 .polaroid-wrap { display: flex; justify-content: center; }
